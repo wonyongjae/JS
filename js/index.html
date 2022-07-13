@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Momentum</title>
+  </head>
+
+  <body>
+    <form>
+      <h1>Random Number Game</h1>
+      <span class="Span">Generate a number between 0 and</span>
+      <input id="max" type="number" min="0" required />
+    <br />
+    <br />
+
+      <span>
+        <span>Guess the number:</span>
+      </span>
+      <input
+      id="chose"
+        type="number"
+        min="0"
+        required />
+      <button onclick="{onGetRandomNumber}" type="submit">Play!</button>
+    </form>
+        <!-- <div id="result" style="visibility: hidden;"> -->
+            <h2 id="results"></h2>
+            <h2 id="result"></h2>
+        <!-- </div> -->
+
+    <script src="/Users/wyj/Desktop/begin/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.Span {
+    font-weight: bold;
+  }
+  
+span {
+    font-size: 25px;
+  }
+  
+Input {
+    height: 20px;
+    width: 150px;
+  }
+  
+
+body{
+    background-color: beige;
+}
