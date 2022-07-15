@@ -22,11 +22,15 @@ const colors = [
   const getColors = document.querySelector("button");
   
   function giveMeColors() {
-    const giveYouColors = document.body;
+    // const giveYouColors = document.body;
     const firstColor = Math.floor(Math.random() * colors.length);
     const seconColor = Math.floor(Math.random() * colors.length);
+
+    if(firstColor == seconColor){
+        return giveMeColors();
+    }
   
-    giveYouColors.style.backgroundImage = `linear-gradient(to right, ${colors[firstColor]}, ${colors[seconColor]}`;
+    giveYouColors.body.style.backgroundImage = `linear-gradient(to right, ${colors[firstColor]}, ${colors[seconColor]}`;
   }
   
   getColors.addEventListener("click", giveMeColors);
