@@ -30,7 +30,7 @@ const colors = [
         return giveMeColors();
     }
   
-    giveYouColors.body.style.backgroundImage = `linear-gradient(to right, ${colors[firstColor]}, ${colors[seconColor]}`;
+    document.body.style.backgroundImage = `linear-gradient(to right, ${colors[firstColor]}, ${colors[seconColor]}`;
   }
   
   getColors.addEventListener("click", giveMeColors);
